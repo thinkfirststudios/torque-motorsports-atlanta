@@ -1,7 +1,7 @@
 # Image credits — ALL STOCK PLACEHOLDERS
 
 Source: Pexels (free licence, commercial use, no attribution required). Fully desaturated, then mapped graphite
-(never pure black) → neutral → clean highlights with a faint yellow-green screen cast. **No blue survives the grade**
+(never pure black) → neutral → clean highlights (v2: neutral, no tint). **No blue survives the grade**
 — every frame is converted to greyscale before the colour map, so the blue screen-glow in the originals cannot carry
 through (that look is Pixel Speed's).
 
