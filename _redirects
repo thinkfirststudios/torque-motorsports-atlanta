@@ -1,0 +1,25 @@
+# Netlify / Cloudflare Pages — only used if Torque signs and the site migrates off Wix.
+
+# --- Preserve their real paths ---
+/events        /events.html     200
+/location      /visit.html      200
+/membership    /pricing.html    200
+/newcars       /newcars.html    200
+
+# --- /book-online: BLOCKER, NOT A DETAIL (pre-launch L4) ---
+# Almost certainly a Wix Bookings app or an external provider. Identify it BEFORE any migration date is promised.
+# If bookings live inside Wix, leaving Wix means replacing or re-subscribing to a booking provider.
+# [BOOKING SYSTEM — PROVIDER NOT IDENTIFIED, CONFIRM URL]
+# Once known: /book-online  <provider URL>  302   (or keep the provider embed on /book)
+/book-online   /book.html       302
+
+# --- Pretty permalinks for new pages ---
+/book          /book.html       200
+/pricing       /pricing.html    200
+/formats       /formats.html    200
+/visit         /visit.html      200
+/privacy       /privacy.html    200
+/terms         /terms.html      200
+
+# [ORPHAN PAGE INVENTORY — ALEX TO CRAWL THE WIX SITE BEFORE MIGRATION (L15)]
+# [PRIVATE EVENT FORM — TARGET URL AND BACKEND — CONFIRM]
