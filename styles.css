@@ -384,3 +384,7 @@ figure.ph figcaption span { background: rgba(12, 12, 14, .85); padding: 3px 7px;
 @media (min-width: 900px) and (max-height: 920px) { .hero-mark { width: clamp(84px, 13vh, 130px); } .hero h1 { font-size: clamp(3rem, min(9vw, 10vh), 8rem); } }
 @media (max-width: 899px) { .hero-mark { width: 92px; } }
 @media (max-width: 899px) { .hero .img-label { top: auto; bottom: 8px; left: 16px; right: 16px; font-size: .625rem; } .hero-inner { padding-top: 28px; padding-bottom: 48px; } }
+/* Bigger hero logo (Alex, 2026-10-09) */
+.hero-mark { width: clamp(170px, min(24vw, 28vh), 360px); margin-bottom: 16px; }
+@media (min-width: 900px) and (max-height: 920px) { .hero-mark { width: clamp(150px, 24vh, 220px); } .hero h1 { font-size: clamp(3rem, min(8vw, 9vh), 7rem); } }
+@media (max-width: 899px) { .hero-mark { width: 170px; } }
