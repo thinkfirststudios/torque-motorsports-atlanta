@@ -379,3 +379,8 @@ figure.ph figcaption span { background: rgba(12, 12, 14, .85); padding: 3px 7px;
 .btn { white-space: nowrap; }
 @media (min-width: 1240px) and (max-width: 1399px) { .nav a { padding: 0 7px; font-size: .875rem; } .btn.head-cta { padding: 0 16px; } }
 @media (max-width: 899px) { .hero .eyebrow { display: none; } }
+/* Hero logo always shows — scaled to the space, never hidden */
+.hero-mark { display: block !important; width: clamp(84px, min(13vw, 15vh), 200px); margin-bottom: 12px; }
+@media (min-width: 900px) and (max-height: 920px) { .hero-mark { width: clamp(84px, 13vh, 130px); } .hero h1 { font-size: clamp(3rem, min(9vw, 10vh), 8rem); } }
+@media (max-width: 899px) { .hero-mark { width: 92px; } }
+@media (max-width: 899px) { .hero .img-label { top: auto; bottom: 8px; left: 16px; right: 16px; font-size: .625rem; } .hero-inner { padding-top: 28px; padding-bottom: 48px; } }
