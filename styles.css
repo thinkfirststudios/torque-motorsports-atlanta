@@ -364,3 +364,18 @@ figure.ph figcaption span { background: rgba(12, 12, 14, .85); padding: 3px 7px;
 .eyebrow b { color: var(--red-text); }
 .sheet .eyebrow b { color: var(--red); }
 @media (min-width: 900px) { .brand-logo { height: 48px; } .site-head.is-condensed .brand-logo { height: 38px; } }
+/* Hero fits the first screen on any window: size by height as well as width */
+.hero { min-height: min(100svh, 1100px); }
+.hero-inner { padding-top: clamp(40px, 7vh, 96px); padding-bottom: clamp(28px, 5vh, 64px); }
+.hero h1 { font-size: clamp(3rem, min(10vw, 11.5vh), 9rem); max-width: none; margin-bottom: 12px; }
+.hero-mark { width: clamp(110px, min(13vw, 17vh), 200px); margin-bottom: 14px; }
+.hero .claim { margin-bottom: 18px; }
+.status-strip { margin-bottom: 18px; }
+@media (min-width: 900px) and (max-height: 920px) { .hero-mark { display: none; } .hero h1 { font-size: clamp(3rem, min(9vw, 11vh), 8rem); } }
+@media (max-width: 899px) { .hero-mark { width: 96px; } .hero h1 { font-size: clamp(2.8rem, 13vw, 5rem); } }
+/* Hero = the visible screen MINUS the sticky header (and the mobile action bar), so the buttons land above the fold */
+.hero { min-height: max(420px, calc(100svh - 150px)); }
+@media (max-width: 899px) { .hero { min-height: max(420px, calc(100svh - 280px)); } .hero-mark { display: none; } .hero-inner { padding-top: 32px; } .hero .claim { font-size: 1rem; } }
+.btn { white-space: nowrap; }
+@media (min-width: 1240px) and (max-width: 1399px) { .nav a { padding: 0 7px; font-size: .875rem; } .btn.head-cta { padding: 0 16px; } }
+@media (max-width: 899px) { .hero .eyebrow { display: none; } }
